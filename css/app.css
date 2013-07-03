@@ -32,11 +32,17 @@
 h1, #Sobre h2 {
   font-weight: 700;
   font-size: 1.7rem;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.charla {
+  margin: 1.5rem 0;
 }
 
 .charla h1 {
