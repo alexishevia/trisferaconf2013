@@ -58,6 +58,6 @@ section {
 }
 
 img {
-  padding-bottom: 2rem;
-  max-width: 100%;
+  max-width: 16rem;
+  padding: 0.5rem;
 }
