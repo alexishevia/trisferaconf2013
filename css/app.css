@@ -1,0 +1,63 @@
+.nav {
+  display:none;
+}
+
+#main {
+  max-width: 35rem;
+  margin: auto;
+  text-align: justify;
+}
+
+#typography {
+  max-width: 50rem;
+  padding: 0.7rem;
+  margin: auto;
+}
+
+@media(min-width: 45rem){
+  .nav {
+    width: 8rem;
+    display: block;
+  }
+
+  #main {
+    margin-left: 12rem;
+  }
+}
+
+#Sobre h1 {
+  font-size: 2.1rem;
+}
+
+h1, #Sobre h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.charla h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.page-header {
+  margin: auto;
+}
+
+img {
+  padding-bottom: 2rem;
+  max-width: 100%;
+}
