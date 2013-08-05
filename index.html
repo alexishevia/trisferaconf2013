@@ -15,35 +15,35 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
-	<script type="application/ld+json">
-	[ {
-	  "@context" : "http://schema.org",
-	  "@type" : "Event",
-	  "name" : "Concurso de Programación",
-	  "startDate" : "2013-08-09T18:00",
-	  "location" : {
-	    "@type" : "Place",
-	    "name" : "Edificio 184, Centro de Convenciones, Ciudad del Saber",
-	    "address" : {
-	      "@type" : "PostalAddress",
-	      "addressLocality" : "Ciudad de Panamá"
-	    }
-	  }
-	}, {
-	  "@context" : "http://schema.org",
-	  "@type" : "Event",
-	  "name" : "Charlas y exposiciones",
-	  "startDate" : "2013-08-10T10:00",
-	  "location" : {
-	    "@type" : "Place",
-	    "name" : "Edificio 184, Centro de Convenciones, Ciudad del Saber",
-	    "address" : {
-	      "@type" : "PostalAddress",
-	      "addressLocality" : "Ciudad de Panamá"
-	    }
-	  }
-	} ]
-	</script>
+  <script type="application/ld+json">
+  [ {
+    "@context" : "http://schema.org",
+    "@type" : "Event",
+    "name" : "Concurso de Programación",
+    "startDate" : "2013-08-09T18:00",
+    "location" : {
+      "@type" : "Place",
+      "name" : "Edificio 184, Centro de Convenciones, Ciudad del Saber",
+      "address" : {
+        "@type" : "PostalAddress",
+        "addressLocality" : "Ciudad de Panamá"
+      }
+    }
+  }, {
+    "@context" : "http://schema.org",
+    "@type" : "Event",
+    "name" : "Charlas y exposiciones",
+    "startDate" : "2013-08-10T10:00",
+    "location" : {
+      "@type" : "Place",
+      "name" : "Edificio 184, Centro de Convenciones, Ciudad del Saber",
+      "address" : {
+        "@type" : "PostalAddress",
+        "addressLocality" : "Ciudad de Panamá"
+      }
+    }
+  } ]
+  </script>
   </head><!--
  data-spy="scroll" data-target=".nav" -->
   <body>
@@ -66,12 +66,20 @@
       <h1>TrisferaConf 2013</h1>
       <p>El Trisfera Conf es el evento de desarrollo web y móvil más grande de Panamá. Serán dos días donde podrás aprender sobre las últimas tendencias en el mundo del desarrollo web y compartir con otros programadores y diseñadores panameños.</p>
       <p>Habrán concursos de programación, premios, charlas y talleres.</p>
-      <h2>¿A quién está dirigido?</h2>
+    </section>
+
+    <section id="Transmision">
+      <h1>Chat en Vivo</h1>
+      <p id="chat"></p>
+    </section>
+
+    <section id="Dirigido">
+      <h1>¿A quién está dirigido?</h1>
       <p>
       Tanto a profesionales en la industria del desarrollo web y móvil como a estudiantes y personas interesadas en incursionar en el mundo de la programación.
       </p>
-      <p>¡Regístrate ya! Cupos limitados</p>
-      <a href="http://trisferaconf2013.eventbrite.com/" target="_new" class="btn btn-large btn-success">Registro</a>
+      <!--<p>¡Regístrate ya! Cupos limitados</p>-->
+      <!--<a href="http://trisferaconf2013.eventbrite.com/" target="_new" class="btn btn-large btn-success">Registro</a>-->
     </section>
 
     <section id="Lugar">
@@ -215,5 +223,6 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
+<script src="http://ec2-54-214-50-127.us-west-2.compute.amazonaws.com:8000/javascripts/node-chat.js" chatwidth="375px" chatheight="600px" target="chat"></script>
 </body>
 </html>
