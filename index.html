@@ -52,14 +52,6 @@
 ================================================== -->
 <section id="typography">
 
-  <ul class="nav nav-tabs nav-stacked affix">
-    <li><a href="#Sobre">Inicio</a></li>
-    <li><a href="#Lugar">Lugar</a></li>
-    <li><a href="#Hackaton">Hackaton</a></li>
-    <li><a href="#Conferencia">Conferencia</a></li>
-    <li><a href="#Patrocinadores">Patrocinadores</a></li>
-  </ul>
-
   <div id="main">
 
     <section id="Sobre">
@@ -69,33 +61,17 @@
     </section>
 
     <section id="Transmision">
-      <h1>Chat en Vivo</h1>
-      <p id="chat"></p>
-    </section>
-
-    <section id="Dirigido">
-      <h1>¿A quién está dirigido?</h1>
-      <p>
-      Tanto a profesionales en la industria del desarrollo web y móvil como a estudiantes y personas interesadas en incursionar en el mundo de la programación.
-      </p>
-      <!--<p>¡Regístrate ya! Cupos limitados</p>-->
-      <!--<a href="http://trisferaconf2013.eventbrite.com/" target="_new" class="btn btn-large btn-success">Registro</a>-->
+      <h1>Transmisión en Vivo</h1>
+      <div id="video">
+        <div id="player_preview"></div>
+      </div>
+      <div id="chat"></div>
+      <div class="clear"></div>
     </section>
 
     <section id="Lugar">
       <h1>Lugar</h1>
       <p>Edificio 184, Centro de Convenciones, Ciudad del Saber</p>
-    </section>
-
-    <section id="Hackaton">
-      <h1>Hackaton</h1>
-      <h2>Viernes 9 de Agosto</h2>
-      <h2>Concurso de Programación</h2>
-      <p>Horario: 6:00pm a 10:00pm</p>
-      <p>¡Esta es tu oportunidad para demostrar qué tan buen programador eres!</p>
-      <p>
-      El concurso consistirá en resolver distintos problemas de la manera más eficiente posible. Habrán varias categorías en base a la dificultad de los problemas y muchos premios para los participantes. La participación será de manera individual y los problemas se podrán resolver en cualquiera de los siguientes lenguajes: C, Clojure, C++, C#, D, Erlang, Go, Groovy, Haskell, Java, Javascript, Lua, Objective C, OCaml, Pascal, Perl, PHP, Python, Ruby, Lisp, Scala.
-      </p>
     </section>
 
     <section id="Conferencia">
@@ -223,6 +199,46 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
+
+<!-- chat -->
 <script src="http://ec2-54-214-50-127.us-west-2.compute.amazonaws.com:8000/javascripts/node-chat.js" chatwidth="375px" chatheight="600px" target="chat"></script>
+
+<!-- video stream -->
+<script type="text/javascript" src="http://www.primcast.com/jwplayer5/jwplayer.js"></script>
+<script type="text/javascript">
+  jwplayer('player_preview').setup({
+    'id': 'playerID',
+    'width': 560,
+    'height': 400,
+    'provider': 'rtmp',
+    'rtmp.tunneling':'false',
+    'autostart':'true',
+    'streamer': 'rtmp://neonety012.flashmediacast.com:2011/live',
+    'file': 'trisferaconf',
+    'skin': 'http://www.primcast.com/jwplayer5/classic.zip',
+    'duration': '0',
+    'modes': [
+      {
+        type: 'flash',
+        src: 'http://www.primcast.com/jwplayer5/player.swf'
+      },
+      {
+        type: 'html5',
+        config: {
+          'file': 'http://neonety012.flashmediacast.com:2011/live/trisferaconf/playlist.m3u8',
+          'provider': 'video'
+        }
+      },
+      {
+        type: 'download',
+        config: {
+          'file': 'http://neonety012.flashmediacast.com:2011/live/trisferaconf/playlist.m3u8',
+          'provider': 'video'
+        }
+      }
+    ]
+  });
+</script>
+
 </body>
 </html>

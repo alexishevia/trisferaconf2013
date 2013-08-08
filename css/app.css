@@ -3,26 +3,14 @@
 }
 
 #main {
-  max-width: 35rem;
   margin: auto;
   text-align: justify;
 }
 
 #typography {
-  max-width: 50rem;
+  max-width: 60rem;
   padding: 0.7rem;
   margin: auto;
-}
-
-@media(min-width: 45rem){
-  .nav {
-    width: 8rem;
-    display: block;
-  }
-
-  #main {
-    margin-left: 12rem;
-  }
 }
 
 #Sobre h1 {
@@ -67,3 +55,16 @@ img {
   max-width: 16rem;
   padding: 0.5rem;
 }
+
+#video {
+  float: left;
+}
+
+#chat {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
